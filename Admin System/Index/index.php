@@ -4,8 +4,12 @@
   require('../control/functions.php');
   require('../control/session.php');
   include('../control/Login.Controller.php');  
-  include('../AdminBar/Primary.php');   
-
+  include('../AdminBar/Primary.php');  
+if(isset($_COOKIE['Admin'])){ 
+	if($_COOKIE['Admin'] == "TRUE"){
+		header('location: ../admin/admin.index.php');
+	}
+}
 ?>
 
 <!Doctype html>
