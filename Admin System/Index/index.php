@@ -36,6 +36,7 @@ if(isset($_COOKIE['Admin'])){
   <!-- Linking files -->
     <script src="../script/controller.js"></script>
     <link href="main.css" rel="stylesheet">
+    
 
     <!-- Javascript testing -->
     <script>

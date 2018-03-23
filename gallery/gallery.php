@@ -9,7 +9,7 @@
 
 <!-- Tab Title -->
 <head>
-    <title>WYO Renovations</title>
+    <title>WYO Renovations - Gallery</title>
 </head>
 
 
@@ -28,23 +28,23 @@
 </head>
 
 <body>
-    <div id="total_container">
-<img src="../index/Images/Man_logo.png" alt="Company.Logo" id="header_logo">
-<img src="../index/Images/photo_owner.jpeg" alt="Picture of Owner at work" id="photo_owner">
-<div id="test">apended</div>
-<div id="image_container">
-<?php 
-// if($_COOKIE['Session'] == "TRUELY"){
-//     echo "true";
-// }
-$myDir = "./gallery.images/";
-$images = glob($myDir. "*.jpeg");
-foreach($images as $curimg){
-    echo "<a href='".$curimg."'/>";
-    echo "<img class='gallery_images' src='".$curimg."'/>";
-    }
+<!-- <div id="test">apended</div> -->
+
+<?php include("../Header/header.php");
 
 ?>
+
+<div id="total_container">
+    <div id="image_container">
+        <?php 
+        $myDir = "./gallery.images/";
+        $images = glob($myDir. "*.jpeg");
+            foreach($images as $curimg){
+                echo "<a href='".$curimg."'/>";
+                echo "<img class='gallery_images' src='".$curimg."'/>";
+                }
+
+    ?>
 
 </div>
 <script>
