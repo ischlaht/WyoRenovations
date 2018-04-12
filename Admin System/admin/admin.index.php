@@ -58,7 +58,7 @@ else{
 
     <input type="button" id="RegShowBTN" class="HideAndSeek" value="Register a New Admin"/>
 
-    <form method="POST" class="ng-cloak" id="RegisterSystem">
+    <form method="POST" class="ng-cloak" enctype="multipart/form-data" id="RegisterSystem">
         <div id="RegInfoContainer" ng-controller="RegisterUser">
             <ul><label>Username :</label>
                 <input type="text" id="Username" class="form-control" ng-keyup="UserAvailability()" ng-controller="RegisterUser" name="Username"/>
@@ -131,7 +131,7 @@ else{
 
     </form><!--registration Container -->
 
-    <form method="POST" ng-Controller="GetAdmins" class="ng-cloak" id="AdminEditSystem">
+    <form method="POST" ng-Controller="GetAdmins" enctype="multipart/form-data" class="ng-cloak" id="AdminEditSystem">
             <input style="width: 100%; height: 40px;" type="submit" ng-init="GetAdminNames()" ng-click="GetAdminNames()" value="Refresh"/>
         <div id="GetAdminNames" ng-init="GetAdminNames()">
                     <label class="editLabel">Firstname : </label>

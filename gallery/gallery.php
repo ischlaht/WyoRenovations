@@ -1,4 +1,6 @@
-
+<?php include_once('gallery.controller.php');
+        include_once('../Admin System/AdminBar/Primary.php');        
+?>
 <!Doctype html>
 <html lang="en" charset="UTF-8">
 
@@ -9,11 +11,9 @@
 
 <!-- Tab Title -->
 <head>
-    <title>WYO Renovations - Gallery</title>
-</head>
+    <title>Portfoilio</title>
 
 
-  <head>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- Animate Snippits -->
@@ -30,9 +30,25 @@
 <body>
 <!-- <div id="test">apended</div> -->
 
-<?php include("../Header/header.php");
+<?php include("../Header/header.php"); ?>
 
+<?php 
+    if(isset($_COOKIE['Admin']) || isset($_SESSION['Admin'])){
+        if($_COOKIE['Admin'] == "TRUE" || $_SESSION['Admin'] == "TRUE"){ ?>
+
+            <form method="POST" action="gallery.php" enctype="multipart/form-data" id="gallery_upload_container">
+                <label>Upload Photos</label>
+                    <div id="preview">Photo Preview</div>
+                    <input type="file" name="photoUpload" id="gallery_file_upload" hidden/>
+                        <ul>Photo Name :</ul>
+                            <input type="text" name="photoName" class="form-control" id="gallery_name">
+                            <input type="submit" name="uploadPhoto" value="Upload Photo" id="upload_photo_btn"/>
+            </form>
+<?php
+        }
+    }
 ?>
+
 
 <div id="total_container">
     <div id="image_container">
@@ -40,17 +56,44 @@
         $myDir = "./gallery.images/";
         $images = glob($myDir. "*.jpeg");
             foreach($images as $curimg){
+                // echo "<input type='button' name"
                 echo "<a href='".$curimg."'/>";
                 echo "<img class='gallery_images' src='".$curimg."'/>";
-                }
-
+            }
     ?>
-
 </div>
+
+
+
 <script>
     var el = $('#test');
 var wid = $(window).width();
 el.text(wid);
+
+
+function filePreview(input){
+    if(input.files && input.files[0]){
+        var reader = new FileReader();
+        reader.onload = function(e){
+            // $('#gallery_upload_container + img').remove();
+            $('#preview').append('<img src="'+e.target.result+'" width="300"; position="relative"; height="186X"; z-index="20"/>');
+        };
+            reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$('#gallery_file_upload').change(function(){
+    filePreview(this);
+});
+
+//Custom choose file button event
+$('#preview').click(function() {
+    $('#gallery_file_upload').click();
+});
+
+// function Uploadd(){
+// }
+
 
 </script>
 

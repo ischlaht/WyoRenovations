@@ -2,8 +2,9 @@
 //Database connection
 $DataBaseConnection = mysqli_connect('localhost', 'root', '', 'companytemplate');
 
-
-
+//Gallery configuration
+$portfolioDIR = "gallery.images/";//main directory for gallery
+$portfolioAllowed = array("jpg", "jpeg", "gif", "png", "tiff");//Allowed extensions for photo gallery uploads
 
 //ERROR Handle on false connection
 if($DataBaseConnection == false){

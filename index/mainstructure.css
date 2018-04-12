@@ -15,7 +15,6 @@ display: grid;
 overflow: hidden;
 margin:auto;
 
-
 }
 
 #total_container{
@@ -37,10 +36,6 @@ font-size:40px;
 text-align: center;
 width: 60%;
 outline:1px solid green;
-
-
-
-
 
 }
 

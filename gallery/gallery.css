@@ -4,19 +4,74 @@
     width: 100%;
     display: inline-block;
 }
-
-/* 
-#header_logo{
-    width: 70%;
-    height: 230px;
-    background-color: green;
+body{
+    margin: 0px;
+    padding: 0px;
 }
 
-#photo_owner{
-    width: 30%;
-    height: 230px;
-    float: right;
-} */
+#gallery_upload_container{
+    width: 60%;
+    height: 265px;
+    background-color: black;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+#gallery_upload_container label{
+    font-size: 180%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Stencil', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+}
+
+#preview{
+    position: absolute;
+    z-index: 1;
+    height: 210px;
+    width: 300px;
+    top: 340px;
+    left: 10px;
+    text-align: center;
+    color: blue;
+    background-color: lightgrey;
+}
+
+#gallery_upload_container ul{
+    position: absolute;
+    top: 400px;
+    left: 315px;
+    color: green;
+    font-size: 120%;
+}
+#gallery_name{
+    width: 250px;
+    position: absolute;
+    top: 400px;
+    left: 490px;
+}
+
+#upload_photo_btn{
+    position: absolute;
+    top: 470px;
+    left: 350px;
+    display: block;
+    color: red;
+    background-color: green;
+    width: 400px;
+    height: 80px;
+    font-size: 150%;
+    border-radius: 10px;
+}
+    #upload_photo_btn:hover{
+        color: green;
+        background-color: red;
+    }
+
+
+
+
 
 #image_container{
     width: 100%;
