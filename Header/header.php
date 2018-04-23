@@ -9,10 +9,12 @@
     
     <div id="btn_total_container">
         <i>Menu : </i>
+        <a id="home_btn" href="../index/index.php">Home</a>
         <input type="button" id="design_list_btn" onclick="test()" value="Design" disable/>
         <a id="gallery_btn" onclick="test()" href="../gallery/gallery.php" value="Gallery">Gallery</a>
         <input type="button" id="employment_btn" onclick="test()" value="Employment" disabled>
         <input type="button" id="contact_btn" onclick="signin()" value="Contact" disabled>
+        
     </div><!--Buttons total container end-->
 </div><!--title end-->
 <img src="../index/Images/photo_owner.jpeg" alt="Picture of Owner at work" id="photo_owner">

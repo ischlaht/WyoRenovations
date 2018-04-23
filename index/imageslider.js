@@ -1,5 +1,18 @@
 
-// Image slider Java SCript
+
+// $(document).ready(function() {
+//     $("#image_slider").swiperight(function() {
+//        $(this).carousel('plusindex(-1)');
+//      });
+//     $("#image_slider").swipeleft(function() {
+//        $(this).carousel('plusindex(+1)');
+//     });
+//  });
+
+
+
+
+// Image slider Java Script
 var index = 1;
 
 function plusindex(n){
@@ -23,3 +36,15 @@ function showImage(n){
 }
 
 showImage();
+
+// $("#image_slider").on("swiperight", plusindex(-1));
+
+// $(function(){
+//     $('#image_slider').bind(image_slider, function(event){
+// alert('');
+//     });
+
+// });
+
+
+

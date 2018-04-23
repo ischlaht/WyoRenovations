@@ -1,4 +1,4 @@
-#total_container{
+#GalleryAPP{
     background-color: lightgreen;
     height: auto;
     width: 100%;
@@ -40,8 +40,8 @@ body{
 
 #gallery_upload_container ul{
     position: absolute;
-    top: 400px;
-    left: 315px;
+    top: 350px;
+    left: 325px;
     color: green;
     font-size: 120%;
 }
@@ -49,18 +49,18 @@ body{
     width: 250px;
     position: absolute;
     top: 400px;
-    left: 490px;
+    left: 340px;
 }
 
 #upload_photo_btn{
     position: absolute;
     top: 470px;
-    left: 350px;
+    left: 340px;
     display: block;
     color: red;
     background-color: green;
-    width: 400px;
-    height: 80px;
+    width: 250px;
+    height: 70px;
     font-size: 150%;
     border-radius: 10px;
 }
@@ -69,26 +69,56 @@ body{
         background-color: red;
     }
 
+/* -----------------------------------------------------------------------------------
+----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+----------------------------------------------------------------------------
+-------------------------------------------------------------------------------------- */
 
-
-
+#gallery_title{
+    width: 100%;
+    height: 265px;
+    font-size: 300%;
+    text-align: center;
+    padding-top: 80px;
+    display: block;
+    background-color: lightgreen;
+    color: black
+}
 
 #image_container{
     width: 100%;
     height: auto;
+    display: inline-block;
+
 }
-.gallery_images{
-    float: left;
+#image_container a{
     width: 350px;
     height: 350px;
-    margin: 55px;
+}
+.gallery_images{
+    /* float: left; */
+    width: 350px;
+    height: 350px;
+    margin: 12px;
+    float: left;
+    /* display: block; */
+}
+
+.deletePost{
+    color: red;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    float: left;
+    margin-left: -50px;
+    margin-top: 20px;
+    
 }
 
 
 
-
-
-@media screen and (max-width: 862px){
+@media only screen and (max-width: 950px){
     #test{
         color: red;
     }
@@ -96,32 +126,30 @@ body{
         float: none;
         display: inherit;
         /* text-align: center; */
-        margin-right: 100px;
+        /* margin-right: 100px; */
     }
     #image_container{
         text-align: center;
     }
 }
-@media screen and (max-width: 1360px){
 
+@media only screen and (max-width: 1007px){
     .gallery_images{
-        margin: 40px;
+        margin: auto;
+        float: none;
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 1855px){
-    .gallery_images{
-        margin: 35px;
-    }
-}
-
-
-@media screen and (max-width: 1007px){
+@media only screen and (max-width: 1510px){
+    #test{
+        color: orange;
+    }    
     .gallery_images{
         margin: 50px;
-    }
-}
-
+        
+    }    
+}    
 
 
 

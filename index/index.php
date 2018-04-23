@@ -3,7 +3,7 @@
 <html lang="en" charset="UTF-8">
 
 <!-- Meta Data -->
-<meta name="viewport" content="width=device-width", initial-scale=1, shrink-to-fit=no>
+<meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1, shrink-to-fit=no">
 <meta description="Wyoming">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
@@ -21,10 +21,13 @@
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="../LIB/JQuery/JMain/node_modules/jquery/dist/jquery.js"></script>
+        <script src="../LIB/JQuery/JMain/node_modules/jquery/src/"></script>
+        
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+        <script src="../LIB/JQuery/JMobile/node_modules/jquery-mobile/js/jquery.mobile.js"></script>
 <link href="mainstructure.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -73,7 +76,7 @@
             </div>
         </div>
         
-        <div id="image_slider_container">
+        <div id="image_slider_container" class="car">
             <p>Click the arrows to view some photos of the high quality jobs we have done recently!</p>
             <div id="image_slider">
                 <img class="slides" src="Images/9127.jpeg" />
