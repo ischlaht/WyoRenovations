@@ -8,6 +8,10 @@ body{
     margin: 0px;
     padding: 0px;
 }
+html{
+    margin: 0px;
+    padding: 0px;
+}
 
 #gallery_upload_container{
     width: 60%;
@@ -40,27 +44,44 @@ body{
 
 #gallery_upload_container ul{
     position: absolute;
-    top: 350px;
-    left: 325px;
+    top: 325px;
+    left: 300px;
     color: green;
-    font-size: 120%;
+    font-size: 110%;
 }
 #gallery_name{
     width: 250px;
     position: absolute;
-    top: 400px;
+    top: 360px;
     left: 340px;
 }
 
+#gallery_comment{
+    width: 250px;
+    position: absolute;
+    top: 440px;
+    left: 340px;
+}
+#gallery_upload_container ol{
+    position: absolute;
+    top: 410px;
+    left: 300px;
+    color: green;
+    font-size: 110%;
+    list-style: none;
+}
+
+
+
 #upload_photo_btn{
     position: absolute;
-    top: 470px;
+    top: 513px;
     left: 340px;
     display: block;
     color: red;
     background-color: green;
     width: 250px;
-    height: 70px;
+    height: 40px;
     font-size: 150%;
     border-radius: 10px;
 }
@@ -74,6 +95,9 @@ body{
 --------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------
 -------------------------------------------------------------------------------------- */
+.ng-scope{
+ display: inline-table;
+}
 
 #gallery_title{
     width: 100%;
@@ -86,33 +110,59 @@ body{
     color: black
 }
 
-#image_container{
+#images_container{
     width: 100%;
     height: auto;
     display: inline-block;
+}
 
+
+#single_image_container{
+    width: 330px;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: auto;
+    display: block;
+    /* background-color: blue; */
 }
-#image_container a{
-    width: 350px;
-    height: 350px;
+
+#images_container a{
+    width: 330px;
+    height: 330px;
 }
+
 .gallery_images{
-    /* float: left; */
-    width: 350px;
-    height: 350px;
-    margin: 12px;
+    width: 330px;
+    height: 330px;
     float: left;
-    /* display: block; */
+    display: block;
+}
+
+.image_comment_container{
+    width: 330px;
+    height: auto;
+    display: block;
+    background-color: lightgrey;   
+    border: 2px solid green; 
+    border-top: none;
+}
+
+.image_comment_text{
+    width: 335px;
+    display: block;
+    padding: 10px;
+    color: black;
 }
 
 .deletePost{
     color: red;
+    display: inline-block;
     background-color: black;
     border: 2px solid black;
     border-radius: 5px;
-    float: left;
-    margin-left: -50px;
-    margin-top: 20px;
+    /* float: right; */
+    margin-top: -320px;
+    margin-left: 295px;
     
 }
 
@@ -131,22 +181,76 @@ body{
     #image_container{
         text-align: center;
     }
+    
 }
 
 @media only screen and (max-width: 1007px){
     .gallery_images{
-        margin: auto;
-        float: none;
         text-align: center;
     }
+    #gallery_upload_container{
+        height: 530px;
+        width: 100%;
+    }    
+
+    #preview{
+        margin-left: 15px;
+    }
+
+    #gallery_upload_container ul{
+        position: absolute;
+        top: 555px;
+        left: 75px;
+        padding-left: 0px;
+        color: green;
+        font-size: 110%;
+    }
+    #gallery_name{
+        width: 250px;
+        position: absolute;
+        top: 590px;
+        left: 55px;
+    }
+
+    #gallery_upload_container ol{
+        position: absolute;
+        top: 630px;
+        left: 75px;
+        padding-left: 0px;
+        color: green;
+        font-size: 110%;
+        list-style: none;
+    }    
+    
+    #gallery_comment{
+        width: 250px;
+        position: absolute;
+        top: 665px;
+        left: 55px;
+    }
+    #upload_photo_btn{
+        position: absolute;
+        top: 760px;
+        left: 55px;
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1510px){
     #test{
         color: orange;
     }    
     .gallery_images{
-        margin: 50px;
         
     }    
 }    

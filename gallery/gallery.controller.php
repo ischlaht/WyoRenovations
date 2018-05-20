@@ -6,8 +6,9 @@ $allowed = $GLOBALS['portfolioAllowed'];
 $uploadError = array();
 
 if(isset($_POST['uploadPhoto'])){
-    $file = $_FILES['photoUpload'];
     $new_name = $_POST['photoName'];
+    $comment = $_POST['photoComment'];
+    $file = $_FILES['photoUpload'];
     $file_name = $file['name'];
     $file_size = $file['size'];
     $file_tmp = $file['tmp_name'];
@@ -49,7 +50,7 @@ if(isset($_POST['uploadPhoto'])){
                                 $img = new stdClass();
                                 $img->image = $new_name.".".$ext;
                                 $img->name = $new_name;
-                                $img->comment = "Blank for now";
+                                $img->comment = $comment;
                                 $myobj = json_encode($img);
                                         //Insert json object into folder with json file.
                                     $writer = fopen($J_DIR.$new_name.".json", "w+");
@@ -93,7 +94,6 @@ if(isset($_GET['DeleteImage'])){
         $DeleteImage = $_POST['myImage'];
             unlink($J_DIR.$DeleteFile.".json");
             unlink($DIR.$DeleteImage);            
-            
     }
     else{
         echo "Must be an Admin to access this function.";

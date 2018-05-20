@@ -8,12 +8,12 @@
     <img src="../index/Images/Man_logo.png" alt="Company.Logo" id="header_logo">
     
     <div id="btn_total_container">
-        <i>Menu : </i>
-        <a id="home_btn" href="../index/index.php">Home</a>
-        <input type="button" id="design_list_btn" onclick="test()" value="Design" disable/>
-        <a id="gallery_btn" onclick="test()" href="../gallery/gallery.php" value="Gallery">Gallery</a>
-        <input type="button" id="employment_btn" onclick="test()" value="Employment" disabled>
+        <!-- <i>Menu : </i> -->
         <input type="button" id="contact_btn" onclick="signin()" value="Contact" disabled>
+        <input type="button" id="employment_btn" onclick="test()" value="Employment" disabled>
+        <a id="gallery_btn" onclick="test()" href="../gallery/gallery.php" value="Gallery">Gallery</a>
+        <!-- <input type="button" id="design_list_btn" onclick="test()" value="Design" disable/> -->
+        <a id="home_btn" href="../index/index.php">Home</a>
         
     </div><!--Buttons total container end-->
 </div><!--title end-->

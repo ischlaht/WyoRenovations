@@ -35,6 +35,7 @@
 </head>
 
 <body>
+    <noscript>Sorry, you must have JavaScript on your device to access this website...</noscript>
     
     <?php include("../Header/header.php"); ?>
     
@@ -46,8 +47,10 @@
                 <label>Upload Photos</label>
                     <div id="preview">Photo Preview</div>
                         <input type="file" name="photoUpload" id="gallery_file_upload" hidden/>
-                    <ul>Photo Name :</ul>
-                        <input type="text" name="photoName" class="form-control" id="gallery_name">
+                    <ul>*Image Name :</ul>
+                        <input type="text" name="photoName" class="form-control" id="gallery_name" required/>
+                    <ol>Comment :</ol>
+                        <textarea rows="2" cols="10" name="photoComment" class="form-control" id="gallery_comment"></textarea>
             <input type="submit" name="uploadPhoto" value="Upload Photo" id="upload_photo_btn"/>
         </form>
         <?php
@@ -58,14 +61,17 @@
 
 
     <form id="GalleryAPP" method="POST" action="gallery.php" enctype="multipart/form-data">
-        <div ng-controller="ShowGalleryController" id="image_container" ng-init="FetchImages()">
+        <div ng-controller="ShowGalleryController" id="images_container" ng-init="FetchImages()">
             <div ng-repeat="x in Records">
-                <div ng-if="x.image != null">
+                <div id="single_image_container" ng-if="x.image != null">
                     <a href="./gallery.images/{{x.image}}">
                     <img ng-src="./gallery.images/{{x.image}}" class="gallery_images"/></a>
+                    <div class="image_comment_container">
                         <?php if(isset($_COOKIE['Admin']) || isset($_SESSION['Admin'])){ ?>
                         <input type="button" class="deletePost" ng-click="deletePost(x.name, x.image)" value="X"/>
                         <?php } ?>
+                        <div class="image_comment_text">{{x.comment}}</div>
+                    </div>
                 </div>
             </div> 
         </div>
