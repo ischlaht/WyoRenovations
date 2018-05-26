@@ -1,11 +1,8 @@
 
+    <!-- This is my custom Admin Bar Component -->
 <?php
 
-
-
-// function Logout($LogOut){
-    // $LogOut = $_POST['LogOut'];
-if(isset($_POST['LogOutt'])){
+if(isset($_POST['LogOut'])){
     $CookieFix = $GLOBALS['Cookie'];
                             //Setting Cookies
     setcookie('Session',       'FALSEY',     time()-10, '/', $CookieFix, false);
@@ -26,28 +23,52 @@ if(isset($_COOKIE['Session'])){
     if(isset($_COOKIE['UserName']) && $_COOKIE['Session'] === 'TRUELY'){
 ?>
         <form method='POST' id="AdminBarContainer"> 
-            <h4> Welcome <?php echo $_COOKIE['UserName']?></h4>
-            <input type='submit' name='LogOutt' value="Logout"/>
+            <ul> Welcome </br><?php echo $_COOKIE['UserName']?>!</ul>
+            <input type='submit' name='LogOut' value="Logout"/>
         </form>
 <?php //";
     }
-    else{}
+    else{ ?>
+        <a id="admin_page_btn" href="../Admin System/Index/index.php">Admin Login</a>
+        <?php
+    }
 }
 ?>
 
 
 <style>
+    html, body{
+        padding: 0px;
+        margin: 0px;
+    }
 #AdminBarContainer{
-    width: 360px;
-    height: 70px;
+    z-index: 100;
+    width: auto;
+    display: inline-block;
+    min-width: 250px;
+    max-width: 400px;
+    height: auto;
     position: fixed;
-    right: 150px;
+    right: 170px;
     top: 20px;
     background-color: darkgrey;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 5px;
+    text-align: center;
+    padding-right: 70px;
 }
-input[name='LogOutt']{
+
+#AdminBarContainer ul{
+    width: auto;
+    height: auto;
+    min-width: 200px;
+    max-width: 300px;
+    font-size: 140%;
+    display: inline-grid;
+    padding: 0;
+}
+
+input[name='LogOut']{
     font-size: 110%;
     width: 80px;
     height: 60px;
@@ -58,9 +79,24 @@ input[name='LogOutt']{
     color: white;
     background-color: red;
 }
-input[name='LogOutt']:hover{
+input[name='LogOut']:hover{
     color: black;
     background-color: green;
+}
+
+@media only screen and (max-width: 950px) {
+    #AdminBarContainer{
+        width: 340px;
+        height: 70px;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+    }
+    
+    #AdminBarContainer ul{
+        font-size: 120%;
+    }
+        
 }
 </style>
 

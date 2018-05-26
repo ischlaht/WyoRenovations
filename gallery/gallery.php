@@ -1,5 +1,5 @@
 <?php include_once('gallery.controller.php');
-        include_once('../Admin System/AdminBar/Primary.php');        
+        include_once('../Admin System/AdminBar/Primary.php');
 ?>
 <!Doctype html>
 <html lang="en" charset="UTF-8">
@@ -85,9 +85,9 @@
 
 
     <script>
-        var el = $('#test');
-    var wid = $(window).width();
-    el.text(wid);
+    //     var el = $('#test');
+    // var wid = $(window).width();
+    // el.text(wid);
 
 
     </script>

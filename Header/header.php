@@ -2,7 +2,7 @@
 <link href="../Header/header.css" rel="stylesheet">
 
 
-<a id="admin_page_btn" href="../Admin System/Index/index.php">Admin Login</a>
+<!-- <a id="admin_page_btn" href="../Admin System/Index/index.php">Admin Login</a> -->
             
 <div id="main_header">
     <img src="../index/Images/Man_logo.png" alt="Company.Logo" id="header_logo">
