@@ -7,6 +7,15 @@
     margin: auto;
 }
 
+/* 
+#admin_page_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 120%;
+} */
+
 /* title and logo */
 
 #main_header {
@@ -32,9 +41,17 @@
     margin: 0px;
     display: inline-block;
     background-image: linear-gradient(to top, green 30%, white 100%);
-    /* background-color: white; */
     padding: 0px;
     vertical-align: bottom;
+}
+
+#btn_total_container i {
+    position: relative;
+    color: blue;
+    float: left;
+    font-size: 60%;
+    padding-left: 10%;
+    vertical-align: top;
 }
 
 #home_btn {
@@ -50,8 +67,8 @@
     border-top: none;
     border-bottom: none;
     border-right: 2px solid lightgreen;
-    /* margin-left: 5px; */
     padding-top: 5px;
+    font-weight: bold;
 }
 
 #home_btn:hover {
@@ -66,37 +83,35 @@
     animation-iteration-count: infinite;
 }
 
-/* 
-#design_list_btn{
+#design_list_btn {
     font-size: 40%;
+    font-weight: bold;
     position: relative;
     color: black;
     float: left;
     vertical-align: top;
-    width: 110px;    
+    width: 15%;
     height: 100%;
     background-color: transparent;
+    border-left: 2px solid lightgreen;
     border-top: none;
     border-bottom: none;
-    border-left: none;
-    margin-left: 0px;
-    padding-left: 0px;
     border-right: 2px solid lightgreen;
-
+    margin-left: 2%;
+    font-weight: bold;
 }
 
-    #design_list_btn:hover{
-        color:red;
-        border: 2px solid red;
-        border-radius: 0px;
-
-        -webkit-animation-name: buttons_anime;
-        -webkit-animation-duration: 1s;
-        -webkit-animation-iteration-count: infinite;
-        animation-name: buttons_anime;
-        animation-duration: 1.2s;
-        animation-iteration-count: infinite;
-} */
+#design_list_btn:hover {
+    color: red;
+    border: 2px solid red;
+    border-radius: 50px;
+    -webkit-animation-name: buttons_anime;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: buttons_anime;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
 
 #gallery_btn {
     font-size: 40%;
@@ -109,6 +124,7 @@
     color: black;
     background-color: transparent;
     border: none;
+    font-weight: bold;
 }
 
 #gallery_btn:hover {
@@ -128,7 +144,7 @@
     font-size: 40%;
     float: right;
     vertical-align: top;
-    width: 105px;
+    width: 108px;
     height: 100%;
     color: black;
     background-color: transparent;
@@ -136,6 +152,7 @@
     border-bottom: none;
     border-right: 2px solid lightgreen;
     border-left: 2px solid lightgreen;
+    font-weight: bold;
 }
 
 #employment_btn:hover {
@@ -154,6 +171,7 @@
     position: relative;
     font-size: 40%;
     float: right;
+    padding-top: 5px;
     vertical-align: top;
     width: 80px;
     height: 100%;
@@ -161,8 +179,8 @@
     background-color: transparent;
     border-top: none;
     border-bottom: none;
-    border-left: none;
-    /* border-right: 2px solid lightgreen; */
+    border-left: 2px solid lightgreen;
+    font-weight: bold;
 }
 
 #contact_btn:hover {

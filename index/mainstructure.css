@@ -1,19 +1,17 @@
-#admin_page_btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: red;
-    font-size: 120%;
-}
+/* ASDASD
+ASDASD
+ASD
+AS
+DA
+SD
+ASD
+AS
+D
+ASD
 
-#header_logo {
-    width: 80%;
-    height: 260px;
-    padding-bottom: 0px;
-    display: grid;
-    overflow: hidden;
-    margin: auto;
-}
+
+
+*/
 
 #total_container {
     background-color: black;
@@ -21,179 +19,9 @@
     padding: 0px;
     ;
     width: 100%;
-    height: 1900px;
+    height: auto;
+    /* height: 1870px; */
     display: inherit;
-}
-
-/* title and logo */
-
-#main_header {
-    color: orangered;
-    background-color: green;
-    display: inline-block;
-    font-size: 40px;
-    text-align: center;
-    width: 60%;
-    outline: 1px solid green;
-}
-
-/*------------------BUTTONS---------------------------------------------------------------------------------------------------------------------------*/
-
-/* ================================================================================================================================================== */
-
-/* Buttons total container */
-
-#btn_total_container {
-    position: relative;
-    width: 100%;
-    height: 35px;
-    margin: 0px;
-    display: inline-block;
-    background-image: linear-gradient(to top, green 30%, white 100%);
-    /* background-color: white; */
-    padding: 0px;
-    vertical-align: bottom;
-}
-
-#btn_total_container i {
-    position: relative;
-    color: blue;
-    float: left;
-    font-size: 60%;
-    padding-left: 10%;
-    vertical-align: top;
-}
-
-#design_list_btn {
-    font-size: 40%;
-    position: relative;
-    color: black;
-    float: left;
-    vertical-align: top;
-    width: 15%;
-    height: 100%;
-    background-color: transparent;
-    border-left: 2px solid lightgreen;
-    border-top: none;
-    border-bottom: none;
-    border-right: 2px solid lightgreen;
-    margin-left: 2%;
-}
-
-#design_list_btn:hover {
-    color: red;
-    border: 2px solid red;
-    border-radius: 50px;
-    -webkit-animation-name: buttons_anime;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-iteration-count: infinite;
-    animation-name: buttons_anime;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-}
-
-#gallery_btn {
-    position: relative;
-    font-size: 40%;
-    padding-top: 6px;
-    float: left;
-    vertical-align: top;
-    width: 15%;
-    height: 100%;
-    color: black;
-    background-color: transparent;
-    border: none;
-}
-
-#gallery_btn:hover {
-    color: red;
-    border: 2px ridge red;
-    border-radius: 50px;
-    -webkit-animation-name: buttons_anime;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-iteration-count: infinite;
-    animation-name: buttons_anime;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-}
-
-#employment_btn {
-    position: relative;
-    font-size: 40%;
-    float: left;
-    vertical-align: top;
-    width: 15%;
-    height: 100%;
-    color: black;
-    background-color: transparent;
-    border-top: none;
-    border-bottom: none;
-    border-right: 2px solid lightgreen;
-    border-left: 2px solid lightgreen;
-}
-
-#employment_btn:hover {
-    color: red;
-    border: 2px solid red;
-    border-radius: 50px;
-    -webkit-animation-name: buttons_anime;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-iteration-count: infinite;
-    animation-name: buttons_anime;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-}
-
-#contact_btn {
-    position: relative;
-    font-size: 40%;
-    float: left;
-    vertical-align: top;
-    width: 15%;
-    height: 100%;
-    color: black;
-    background-color: transparent;
-    border-top: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: 2px solid lightgreen;
-}
-
-#contact_btn:hover {
-    color: red;
-    border: 2px solid red;
-    border-radius: 50px;
-    -webkit-animation-name: buttons_anime;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-iteration-count: infinite;
-    animation-name: buttons_anime;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-}
-
-/* ---CSS Fun keyframe Styling---- */
-
-@keyframes buttons_anime {
-    0% {
-        background-color: green;
-    }
-    100% {
-        background-color: black;
-    }
-}
-
-/* -=====================Buttons END================================
-========================Buttons END=================================*/
-
-/* Photo of the owner goes here */
-
-#photo_owner {
-    height: 560px;
-    width: 40%;
-    float: right;
-    border: 1px solid green;
-    border-bottom: none;
-    margin: 0px;
 }
 
 /* -------------------------INTRODUCTION--------------------------------------------------------------------------------------------------------------- */
@@ -201,9 +29,9 @@
 /* ==================================================================================================================================================== */
 
 #intro {
-    background-color: #a5a5a5;
+    background-image: linear-gradient(grey, white);
     width: 60%;
-    height: 240px;
+    height: 265px;
     padding: 20px;
     margin: 0px;
     display: inline-block;
@@ -228,7 +56,7 @@
     width: 33%;
     float: left;
     text-indent: 15px;
-    border-right: 4px solid black;
+    border-right: 2px solid black;
     height: 80%;
     padding-right: 10px;
     margin-top: 5px;
@@ -241,7 +69,7 @@
     float: left;
     font-size: 100%;
     text-indent: 15px;
-    border-right: 4px solid black;
+    border-right: 2px solid black;
     padding-left: 20px;
     font-style: italic;
 }
@@ -262,57 +90,128 @@
 /* ======================================================================================================================================== */
 
 #what_we_do_container {
-    padding: 30px;
+    /* padding: 30px; */
+    padding-bottom: 20px;
     width: 100%;
-    height: 400px;
-    background-color: rgb(38, 212, 38);
+    height: auto;
+    background-image: linear-gradient(lightgreen, green);
     border-top: 3px solid green;
     border-bottom: 3px solid green;
     border-collapse: collapse;
     margin: 0px;
     display: inline-block;
+    text-align: center;
+}
+
+#what_we_do_list {
+    padding: 10px;
+    width: 350px;
+    font-size: 100%;
+    display: inline-block;
+    color: black;
+    text-align: left;
 }
 
 /* The WHAT WE DO TITLE */
 
 #what_we_do_list p {
     color: black;
-    font-size: 200%;
+    font-size: 150%;
     font-weight: bold;
-}
-
-#what_we_do_list {
-    padding: 0px;
-    width: 33%;
-    font-size: 120%;
-    display: inline-block;
-    float: left;
-    color: rgb(13, 17, 224);
+    width: 100%;
+    text-align: center;
 }
 
 #what_we_do li {
+    display: inline-block;
     color: black;
     font-size: 100%;
+    width: 100%;
 }
 
 /* Place To Buy Products-------------*/
 
 #places_buy_List {
-    width: 33%;
-    float: left;
+    width: 350px;
+    display: inline-grid;
+    padding: 10px;
+    vertical-align: top;
+    text-align: left;
 }
 
 /* Title for sellers */
 
 #places_buy_List p {
-    font-size: 290%;
+    font-size: 150%;
     font-weight: bold;
     color: black;
+    width: 100%;
+    text-align: center;
 }
 
 #places_buy_List li {
     font-size: 100%;
     color: black;
+}
+
+/* Container for quick contact in total */
+
+#quick_contact {
+    width: 350px;
+    color: black;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: left;
+    padding-bottom: 10px;
+    border: 2px solid black;
+}
+
+/* Title for quick contact */
+
+#quick_contact .row {
+    width: 100%;
+    /* height: 30px; */
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 0;
+    margin-bottom: -5px;
+    border-bottom: 2px solid black;
+}
+
+#quick_contact .row:last-child {
+    border: none;
+}
+
+#quick_contact p {
+    font-size: 150%;
+    font-weight: bold;
+    width: 100%;
+    /* padding-top: 10px; */
+    text-align: center;
+}
+
+#quick_contact label {
+    width: 135px;
+    font-size: 110%;
+    color: black;
+}
+
+#quick_contact ul {
+    font-size: 100%;
+    display: inline-grid;
+    color: black;
+    width: auto;
+    padding: 0;
+}
+
+#quick_contact i {
+    font-size: 82%;
+    padding: 10px;
+    padding-bottom: 30px;
 }
 
 /* ----------Image Slider----------------------------------------------------------------------------------------------------------------------------- */
@@ -322,7 +221,7 @@
 #image_slider_container {
     width: 100%;
     display: inline-block;
-    background-color: rgb(92, 92, 92);
+    background-image: linear-gradient(to bottom, green, white);
     height: 900px;
 }
 
@@ -361,7 +260,6 @@
 }
 
 #image_slider_btn_prev:hover {
-    /* box-shadow: 0px 0px 5px 5px red; */
     color: red;
 }
 
@@ -385,32 +283,73 @@
     color: green;
 }
 
+/* ___________________________________________
+_____________________________________________________
+_________________________________________________________
+__________________________________________________
+_________________________________________
+___________________________
+__________ Mobile CSS________________________ */
+
 @media only screen and (max-width: 1007px) {
+    #intro {
+        display: inline-table;
+        width: 100%;
+        height: auto;
+    }
+    /* About the owner of the company */
+    #intro i {
+        width: 50%;
+    }
+    /* About the company and why it was started */
+    #intro p {
+        width: 50%;
+        border-right: none;
+    }
+    /* The training and certificates the owner has aquired */
+    #certified {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 10px;
+        border-top: 2px solid black;
+    }
+    /* #what_we_do_container {} */
+    #what_we_do_list {
+        margin: 0;
+    }
+    #what_we_do_list p {
+        display: inline-table;
+        width: 100%;
+    }
+    #what_we_do li {
+        width: 100%;
+    }
+    #quick_contact {
+        margin: 0;
+        padding: 10px;
+    }
     #image_slider img {
         width: 100%;
-        height: 600px;
+        height: 100%;
         position: absolute;
-        border-radius: 5px;
     }
+    #image_slider_container {
+        height: 600px;
+    }
+    /* Class for both image slider bottons */
     .image_slider_btn {
         font-size: 80px;
         margin-top: 230px;
     }
+    /* Left botton or previous button on image slider = */
     #image_slider_btn_prev {
         position: relative;
         margin-left: 20px;
     }
+    /* Right button or next button on image slider */
     #image_slider_btn_next {
         position: relative;
         float: right;
         margin-right: 20px;
     }
-}
-
-#footer {
-    width: 100%;
-    height: 20%;
-    background-color: red;
-    color: green;
-    text-align: center;
 }

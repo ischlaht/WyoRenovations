@@ -1,0 +1,62 @@
+#contactTitle {
+    displaY: block;
+    width: 100%;
+    background-color: lightgreen;
+    background-image: linear-gradient(lightgreen, green);
+    height: 265px;
+    text-align: center;
+    margin: auto;
+}
+
+#contactTitle ul {
+    font-size: 200%;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    color: black;
+}
+
+#contactInfoContainer {
+    display: inline-block;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    background-image: linear-gradient(black 50%, white 90%);
+}
+
+#contactInfoContainer .row {
+    margin: auto;
+    width: 50%;
+    min-width: 360px;
+    border-bottom: 2px solid white;
+}
+
+#contactInfoContainer .row:first-child {
+    margin-top: 100px;
+}
+
+#contactInfoContainer label {
+    color: green;
+    padding-left: 20px;
+    font-size: 140%;
+}
+
+#contactInfoContainer ul {
+    color: green;
+    font-size: 120%;
+}
+
+#contactInfoContainer i {
+    color: lightgreen;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1007px) {
+    #contactTitle {
+        height: 150px;
+    }
+    #contactTitle ul {
+        padding-top: 50px;
+        padding-right: 20px;
+    }
+}

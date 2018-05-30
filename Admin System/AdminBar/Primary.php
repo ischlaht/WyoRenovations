@@ -19,6 +19,10 @@ if(isset($_POST['LogOut'])){
         header('location: ../Index/index.php');
 }
 
+
+
+
+
 if(isset($_COOKIE['Session'])){
     if(isset($_COOKIE['UserName']) && $_COOKIE['Session'] === 'TRUELY'){
 ?>
@@ -41,6 +45,14 @@ if(isset($_COOKIE['Session'])){
         padding: 0px;
         margin: 0px;
     }
+    #admin_page_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 120%;
+}
+
 #AdminBarContainer{
     z-index: 100;
     width: auto;

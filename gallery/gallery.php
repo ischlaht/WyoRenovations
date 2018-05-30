@@ -37,7 +37,7 @@
 <body>
     <noscript>Sorry, you must have JavaScript on your device to access this website...</noscript>
     
-    <?php include("../Header/header.php"); ?>
+    <?php include("../Components/Header/header.php"); ?>
     
     <?php 
     if(isset($_COOKIE['Admin']) || isset($_SESSION['Admin'])){
@@ -77,22 +77,18 @@
         </div>
 
     </form>
-        <!-- <div id="test">apended</div> -->
+
+    <?php include("../Components/Footer/footer.html"); ?>
 
     <script src="Gallery.Controls.js"></script>
-
-
-
 
     <script>
     //     var el = $('#test');
     // var wid = $(window).width();
     // el.text(wid);
 
-
     </script>
 
-    </div>
 </body>
 
 

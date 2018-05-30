@@ -1,5 +1,7 @@
 
-<link href="../Header/header.css" rel="stylesheet">
+<?php include_once('../Admin System/AdminBar/Primary.php'); ?>
+
+<link href="../Components/Header/header.css" rel="stylesheet">
 
 
 <!-- <a id="admin_page_btn" href="../Admin System/Index/index.php">Admin Login</a> -->
@@ -9,9 +11,9 @@
     
     <div id="btn_total_container">
         <!-- <i>Menu : </i> -->
-        <input type="button" id="contact_btn" onclick="signin()" value="Contact" disabled>
-        <input type="button" id="employment_btn" onclick="test()" value="Employment" disabled>
-        <a id="gallery_btn" onclick="test()" href="../gallery/gallery.php" value="Gallery">Gallery</a>
+        <a id="contact_btn" href="../contact/Contact.php" value="Contact">Contact</a>
+        <!-- <input type="button" id="employment_btn" onclick="test()" value="Employment" disabled> -->
+        <a id="gallery_btn" href="../gallery/gallery.php" value="Gallery">Gallery</a>
         <!-- <input type="button" id="design_list_btn" onclick="test()" value="Design" disable/> -->
         <a id="home_btn" href="../index/index.php">Home</a>
         

@@ -33,12 +33,12 @@
 
 <body>
     <div id="total_container">
-        <?php include("../Header/header.php");?>
+        <?php include("../Components/Header/header.php");?>
         
         <div id="intro">
             <title class="animated 2s swing">About us</title>
-            <i> My name is Devan Penman and I am the Founder, Owner, and Supervisor of <font color="red">WYO Renovation</font>. I was born and raised in Rawlins Wyoming. </i>
-            <p>We are located in Rawlins Wyoming. I have decided to start a company who's main gaol is to supply the community with top quality renovation.</p>
+            <i> My name is Devan Penman and I am the Founder, Owner, and Supervisor of <font color="darkblue">WYO Renovations</font>. I was born and raised in Rawlins, Wyoming. </i>
+            <p>We are located in Rawlins Wyoming. I started this company with the main gaol of supplying the community with top quality renovations.</p>
             <div id="certified"> CFI certified flooring installer, CSI school forney texas </div>
         </div>
         
@@ -47,10 +47,11 @@
         <!-- WHAT WE DO -->
         <div id="what_we_do_container">
             <div id="what_we_do_list">
-                <p>What we can do for you.</p>
+                <p>What we do</p>
                 <li> Floors : Carpet, Hardwood, Vinyl, Tile, ETC! </li>
                 <li>Roofing</li>
-                <li>Remodeling</li>
+                <li>Remodel</li>
+                <li>Paint</li>
                 <li>Siding</li>
                 <li>Drywall</li>
                 <li>Cabinets</li>
@@ -66,6 +67,24 @@
                 <li>Home Depot</li>
                 <li>Ace-hardware</li>
                 
+            </div>
+            <div id="quick_contact">
+                <p>Contact Information</p>
+                <div class="row">
+                    <label>Name :</label>
+                    <ul>Devan Penman</ul>
+                </div>
+                <div class="row">
+                    <label>Phone Number :</label>
+                    <ul>307-320-6686</ul>
+                </div>
+                <div class="row">
+                    <label>Email :</label>
+                    <ul>Unknown$gmail.com</ul>
+                </div>       
+                <div class="row">  
+                    <i>We do not currently have a shop. Please call the provided phone number for a free quote and more information.</i>
+                </div> 
             </div>
         </div>
         
@@ -89,6 +108,9 @@
 
         <!-- <script>alert('This is a temporary website that is still in development. It is only online for the client to view the progress and make requested changes they would like. It is expected to be finished next month. All pages that are unfinished are unavailable to avoid early bugs. You will only be able to view the gallery tab along with the homepage. Design, Employment, Contact information and mobile versions of the website are not available at this time.');</script> -->
     
+    </div> <!--for total container -->
+
+    <?php include("../Components/Footer/footer.html"); ?>
 </body>
         
         
@@ -97,25 +119,5 @@
         <!-- Home Depote -->
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </div> <!--for total container -->
-    <footer id="footer">
-        Design and Host By Isaac Schlaht @KingSystemsDEV. Call 307-321-6559 to speak directly with the developer for techniqual support!
-    </footer>
-    
-    
-    
-    
-    
-    
     
     </html>
